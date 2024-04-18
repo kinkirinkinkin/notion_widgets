@@ -109,13 +109,13 @@ function dispalyGreetings(today){
     function dispalyDate(today) {  
        
         const days = ['Domingo', 'Lunes', 'Martes', 'Miercoles', 'Jueves', 'Viernes', 'Sabado'];
-        const monthNames = ["January", "February", "March", "Abril", "May", "June",
-  "July", "August", "September", "October", "November", "December"
+        const monthNames = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio",
+  "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"
 ];
 
         var dayName = days[today.getDay()];
-        var monthName = monthNames[today.getMonth()];
         var date = today.getDate();
+        var monthName = monthNames[today.getMonth()]; 
         var year = today.getFullYear();
         document.getElementById('date').innerHTML =dayName+", "+monthName+" "+date+" "+year;
 
