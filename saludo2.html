@@ -108,7 +108,7 @@ function dispalyGreetings(today){
 
     function dispalyDate(today) {  
        
-        const days = ['Domingo', 'Lunes', 'Martes', 'Miercoles', 'Jueves', 'Viernes', 'Sabado'];
+        const days = ['Domingo', 'Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes', 'Sábado'];
         const monthNames = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio",
   "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"
 ];
@@ -117,7 +117,7 @@ function dispalyGreetings(today){
         var date = today.getDate();
         var monthName = monthNames[today.getMonth()]; 
         var year = today.getFullYear();
-        document.getElementById('date').innerHTML =dayName+", "+monthName+" "+date+" "+year;
+        document.getElementById('date').innerHTML =dayName+", "+date+" de "+monthName+" de "+year;
 
     }
 
